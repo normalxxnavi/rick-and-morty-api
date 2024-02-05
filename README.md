@@ -11,3 +11,21 @@ Esta api te incluye 3 recuperados de informacion **Personajes**, **Localizacione
 
 Al estar montado la pagina web nativa no tenemos que instalar dependencias o implementar cualquier otro archivo.
 
+## Documentación 
+
+He sacado toda la informacion de la pagina web oficial de esta API y se llama: https://rickandmortyapi.com
+Documentacion para consultas GraphQL o para API REST: https://rickandmortyapi.com/documentation
+Pagina de la API para ver todo el contenido:
+
+## Personajes: 
+
+https://rickandmortyapi.com/api/character
+
+## Localizaciones
+
+https://rickandmortyapi.com/api/location
+
+## Episodios
+
+https://rickandmortyapi.com/api/episode
+
