@@ -1,0 +1,167 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/rick-morty.webp);
+    background-size: 1900px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+
+.logo-container a:hover {
+    color: #4cc45c;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+
+.nav-links a:hover {
+    color: #4cc45c;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.intro-text h1 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.intro-text h1:hover {
+    color: grey;
+}
+
+.intro-text p {
+    font-size: 25px;
+    color: black;
+    line-height: 1.5;
+    transition: color 0.3s ease; 
+}
+
+.intro-text p:hover {
+    color: grey;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 261px;
+    opacity: 0.7;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+
+.footer-links a:hover {
+    color: #4cc45c;
+}
+
+footer p:hover {
+    color: #4cc45c;
+    transition: color 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .logo-container a {
+        margin-left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+    }
+
+    .intro-text {
+        margin: 50px auto;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}

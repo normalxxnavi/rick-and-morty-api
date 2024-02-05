@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/rick-morty.webp);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+
+.logo-container a:hover {
+    color: #4cc45c;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+
+.nav-links a:hover {
+    color: #4cc45c;
+}
+
+.characters-container {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 50px; 
+}
+
+.characters-container h1 {
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 6%);
+}
+
+.characters-container h1:hover {
+    color: hsl(120, 80%, 60%);
+    transition: color 0.5s ease;
+}
+
+.mostrar {
+    margin-top: 120px;
+}
+
+.mostrar h3 {
+    font-size: 20px;
+    color: hsl(15, 15, 15);
+}
+
+.mostrar h3:hover {
+    color: hsl(120, 80%, 60%);
+    transition: color 0.5s ease;
+}
+
+label.numeroLocalizacion {
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 6%);
+    font-size: 16px;
+}
+
+label.numeroLocalizacion:hover {
+    color: hsl(120, 80%, 60%);
+    transition: color 0.5s ease;
+}
+
+input[type="number"]#numeroLocalizacion {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4cc45c;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type="button"]#numeroLocalizacionBtn {
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+}
+
+input[type="button"]#numeroLocalizacionBtn:hover {
+    background-color: #1ed437; 
+}
+
+.character h3 {
+    color: rgba(59, 58, 58, 0.753);
+}
+
+.character h3:hover {
+    color: #4cc45c;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+
+.footer-links a:hover {
+    color: #4cc45c;
+}
+
+footer p:hover {
+    color: #4cc45c;
+    transition: color 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .characters-container h1 {
+        font-size: 20px;
+    }
+
+    .mostrar {
+        margin-top: 80px;
+    }
+
+    label.numeroLocalizacion,
+    input[type="number"]#numeroLocalizacion,
+    input[type="button"]#numeroLocalizacionBtn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

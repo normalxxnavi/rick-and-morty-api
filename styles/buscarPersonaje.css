@@ -1,0 +1,241 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/rick-morty.webp);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+
+.logo-container a:hover {
+    color: #4cc45c;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+
+.nav-links a:hover {
+    color: #4cc45c;
+}
+
+.characters-container {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 50px; 
+}
+
+.characters-container h1 {
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 6%);
+}
+
+.characters-container h1:hover {
+    color: hsl(120, 80%, 60%);
+    transition: color 0.5s ease;
+}
+
+.mostrar {
+    margin-top: 120px;
+}
+
+.mostrar img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.mostrar h3 {
+    font-size: 20px;
+    color: hsl(15, 15, 15);
+}
+
+.mostrar h3:hover {
+    color: hsl(120, 80%, 60%);
+    transition: color 0.5s ease;
+}
+
+label.numeroPersonaje {
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 6%);
+    font-size: 16px;
+}
+
+label.numeroPersonaje:hover {
+    color: hsl(120, 80%, 60%);
+    transition: color 0.5s ease;
+}
+
+input[type="number"]#numeroPersonaje {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4cc45c;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type="button"]#buscarPersonajeBtn {
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+}
+
+input[type="button"]#buscarPersonajeBtn:hover {
+    background-color: #1ed437; 
+}
+
+.character h3 {
+    color: rgba(59, 58, 58, 0.753);
+}
+
+.character h3:hover {
+    color: #4cc45c;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+
+.footer-links a:hover {
+    color: #4cc45c;
+}
+
+footer p:hover {
+    color: #4cc45c;
+    transition: color 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: auto; 
+    }
+
+    nav {
+        padding: 10px; 
+    }
+
+    .logo-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .logo-container a {
+        margin: 0; 
+    }
+
+    .logo {
+        margin-right: 0; 
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .nav-links a {
+        margin: 0; 
+    }
+
+    .characters-container {
+        margin: 10px; 
+    }
+
+    .mostrar {
+        margin-top: 80px; 
+    }
+
+    .mostrar img {
+        max-width: 100%; 
+        height: auto;
+        border-radius: 10px; 
+    }
+
+    label.numeroPersonaje,
+    input[type="number"]#numeroPersonaje {
+        margin: 10px 0; 
+    }
+
+    input[type="button"]#buscarPersonajeBtn {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    footer {
+        position: relative; 
+    }
+}
