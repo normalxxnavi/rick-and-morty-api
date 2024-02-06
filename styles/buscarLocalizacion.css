@@ -10,8 +10,9 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(/assets/rick-morty.webp);
+    background-image: url(/assets/fondo_pantalla_completal.jpg);
     background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 nav {
@@ -141,12 +142,13 @@ input[type="button"]#numeroLocalizacionBtn:hover {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: black;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     opacity: 0.7;
-    bottom: 0;
     width: 100%;
 }
 
@@ -174,7 +176,9 @@ footer p:hover {
 
 @media only screen and (max-width: 768px) {
     body {
-        background-size: cover;
+        background-size: 1000px;
+        background-position: 0;
+        background-image: url(/assets/fondo_pantalla_movil.jpg);
     }
 
     nav {
@@ -220,8 +224,11 @@ footer p:hover {
         margin: 10px 0;
     }
 
+    footer {
+        margin-top: 100px;
+    }
+
     footer a{
-        margin-top: 20px;
         display: block;
         flex-direction: column;
     }

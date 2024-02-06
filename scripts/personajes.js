@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(dataArray => {
             allCharacters = dataArray.reduce((acc, data) => acc.concat(data.results), []);
 
-            const randomEightCharacters = getRandomCharacters(allCharacters, 12);
+            const randomEightCharacters = getRandomCharacters(allCharacters, 9);
             displayCharacters(randomEightCharacters);
         })
         .catch(error => console.error('Error al obtener datos:', error));
