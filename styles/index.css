@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(/assets/rick-morty.webp);
+    background-repeat: no-repeat;
     background-size: 1900px;
 }
 
@@ -141,16 +142,22 @@ footer p:hover {
     }
 
     .logo-container {
-        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 5px;
     }
 
     .logo-container a {
+        flex-direction: column;
+        text-align: center;
         margin-left: 0;
     }
 
     .nav-links {
         flex-direction: column;
-        margin-top: 20px;
+        gap: 10px;
+        margin-top: 5px;
     }
 
     .nav-links a {
@@ -161,7 +168,10 @@ footer p:hover {
         margin: 50px auto;
     }
 
-    footer {
-        margin-top: 30px;
+    footer a{
+        margin-top: 20px;
+        display: block;
+        flex-direction: column;
+        
     }
 }

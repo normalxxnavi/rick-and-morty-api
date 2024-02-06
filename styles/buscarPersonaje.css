@@ -153,7 +153,6 @@ footer {
     padding: 20px 0;
     text-align: center;
     opacity: 0.7;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -182,33 +181,35 @@ footer p:hover {
 
 @media only screen and (max-width: 768px) {
     body {
-        background-size: auto; 
+        background-size: cover;
     }
 
     nav {
-        padding: 10px; 
+        flex-direction: column;
+        text-align: center;
     }
 
     .logo-container {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 5px;
     }
 
     .logo-container a {
-        margin: 0; 
-    }
-
-    .logo {
-        margin-right: 0; 
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
     }
 
     .nav-links {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 5px;
     }
 
     .nav-links a {
-        margin: 0; 
+        margin-left: 0;
     }
 
     .characters-container {
@@ -223,6 +224,7 @@ footer p:hover {
         max-width: 100%; 
         height: auto;
         border-radius: 10px; 
+        background-repeat: no-repeat;
     }
 
     label.numeroPersonaje,
@@ -235,7 +237,9 @@ footer p:hover {
         margin: 10px 0; 
     }
 
-    footer {
-        position: relative; 
+    footer a{
+        margin-top: 20px;
+        display: block;
+        flex-direction: column;
     }
 }

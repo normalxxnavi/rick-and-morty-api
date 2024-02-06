@@ -134,19 +134,36 @@ footer p:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
     nav {
         flex-direction: column;
         text-align: center;
     }
 
+    .logo-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
     .logo-container a {
+        flex-direction: column;
+        text-align: center;
         margin-left: 0;
     }
 
     .nav-links {
         flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
     }
 
     .mostrar {
@@ -163,7 +180,9 @@ footer p:hover {
         margin: 5px;
     }
 
-    footer {
+    footer a{
         margin-top: 20px;
+        display: block;
+        flex-direction: column;
     }
 }
