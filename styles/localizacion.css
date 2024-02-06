@@ -67,11 +67,6 @@ nav {
     color: #4cc45c;
 }
 
-.personajes {
-    text-align: center;
-    color: white;
-}
-
 .mostrar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -85,7 +80,7 @@ nav {
 }
 
 #intro:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.5s ease;
 }
 
@@ -93,6 +88,9 @@ nav {
     margin: 10px;
     max-width: 100%; 
     text-align: center;
+    background-color: #2bdd42;
+    opacity: 0.91;
+    border-radius: 10rem;
 }
 
 .location h3 {
@@ -100,7 +98,7 @@ nav {
 }
 
 .location h3:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.3s ease;
 }
 

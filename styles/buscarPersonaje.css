@@ -79,15 +79,22 @@ nav {
 }
 
 .characters-container h1:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.5s ease;
 }
 
 .mostrar {
-    margin-top: 120px;
+    align-items: center;
+    background-color: rgb(41, 219, 64, 0.6);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 15px;
 }
 
 .mostrar img {
+    margin-top: 20px;
     max-width: 300px;
     max-height: 300px;
     border-radius: 15px;
@@ -100,7 +107,7 @@ nav {
 }
 
 .mostrar h3:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.5s ease;
 }
 
@@ -137,15 +144,6 @@ input[type="button"]#buscarPersonajeBtn {
 
 input[type="button"]#buscarPersonajeBtn:hover {
     background-color: #1ed437; 
-}
-
-.character h3 {
-    color: rgba(59, 58, 58, 0.753);
-}
-
-.character h3:hover {
-    color: #4cc45c;
-    transition: color 0.3s ease;
 }
 
 footer {
@@ -242,6 +240,7 @@ footer p:hover {
     }
 
     footer {
+        position: relative;
         margin-top: 100px;
     }
 

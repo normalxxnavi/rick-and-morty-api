@@ -81,6 +81,8 @@ nav {
     margin: 10px;
     max-width: 100%; 
     text-align: center;
+    background-color: rgb(41, 219, 64, 0.6);
+    border-radius: 10rem;
 }
 
 #intro {
@@ -91,22 +93,23 @@ nav {
 }
 
 #intro:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.5s ease;
 }
 
 .character img {
+    margin-top: 15px;
     max-width: 135px;
     max-height: 135px; 
     border-radius: 10px;
 }
 
 .character h3 {
-    color: hsl(15, 15, 15);;
+    color: hsl(15, 15, 15);
 }
 
 .character h3:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.3s ease;
 }
 
