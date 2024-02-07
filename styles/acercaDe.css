@@ -165,7 +165,9 @@ footer p:hover {
     }
 
     .intro-text {
-        margin: 50px auto;
+        max-width: 365px;
+        text-align: center;
+        margin: 30px auto;
     }
 
     footer a{
