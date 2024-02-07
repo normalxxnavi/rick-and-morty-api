@@ -8,7 +8,7 @@ Hola me llamos Javier López Velasco, soy alumno de 2º DAW y he diseñado y cre
 
 Esta api te incluye 3 recuperados de informacion **Personajes**, **Localizaciones** y **Episodios**. He utilizado el metodo **Fetch()** para recuperar esa informacion.
 
-## Instalaciòn
+## Instalación
 
 Al estar montado la pagina web nativa no tenemos que instalar dependencias o implementar cualquier otro archivo.
 
