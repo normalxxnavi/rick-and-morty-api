@@ -101,12 +101,11 @@ nav {
 }
 
 footer {
-    background-color: black;
-    color: #fff;
+    background-color: rgb(0, 0, 0,0.7);
+    color: rgb(255, 255, 255);
     padding: 20px 0;
     text-align: center;
     margin-top: 298px;
-    opacity: 0.7;
 }
 
 .footer-links {
@@ -119,7 +118,6 @@ footer {
     margin: 0 10px;
     font-weight: bold;
     transition: color 0.3s ease;
-    opacity: 0.9;
 }
 
 .footer-links a:hover {

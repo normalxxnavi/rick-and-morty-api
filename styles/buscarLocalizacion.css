@@ -83,32 +83,14 @@ nav {
     transition: color 0.5s ease;
 }
 
-.mostrar {
-    background-color: rgb(41, 219, 64, 0.6);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    border-radius: 15px;
-}
-
-.mostrar h3 {
-    font-size: 20px;
-    color: hsl(15, 15, 15);
-}
-
-.mostrar h3:hover {
-    color: hsl(120, 47%, 96%);
-    transition: color 0.5s ease;
-}
-
 label.numeroLocalizacion {
     margin-bottom: 10px;
     color: hsl(0, 0%, 6%);
-    font-size: 16px;
+    font-size: 25px;
 }
 
 label.numeroLocalizacion:hover {
-    color: hsl(120, 80%, 60%);
+    color: hsl(120, 47%, 96%);
     transition: color 0.5s ease;
 }
 
@@ -136,14 +118,33 @@ input[type="button"]#numeroLocalizacionBtn:hover {
     background-color: #1ed437; 
 }
 
+.mostrar {
+    align-items: center;
+    background-color: rgb(41, 219, 64, 0.6);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+}
+
+.mostrar h3 {
+    font-size: 20px;
+    color: hsl(15, 15, 15);
+}
+
+.mostrar h3:hover {
+    color: hsl(120, 47%, 96%);
+    transition: color 0.5s ease;
+}
+
 footer {
     position: fixed;
     bottom: 0;
-    background-color: black;
-    color: #fff;
+    background-color: rgb(0, 0, 0,0.7);
+    color: rgb(255, 255, 255);
     padding: 20px 0;
     text-align: center;
-    opacity: 0.7;
     width: 100%;
 }
 
@@ -157,7 +158,6 @@ footer {
     margin: 0 10px;
     font-weight: bold;
     transition: color 0.3s ease;
-    opacity: 0.9;
 }
 
 .footer-links a:hover {
@@ -209,7 +209,9 @@ footer p:hover {
     }
 
     .mostrar {
+        position: relative;
         margin-top: 80px;
+        margin-bottom: 200px;
     }
 
     label.numeroLocalizacion,
@@ -220,6 +222,7 @@ footer p:hover {
     }
 
     footer {
+        position: relative;
         margin-top: 100px;
     }
 

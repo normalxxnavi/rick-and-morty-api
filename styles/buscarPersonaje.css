@@ -83,6 +83,41 @@ nav {
     transition: color 0.5s ease;
 }
 
+label.numeroPersonaje {
+    margin-bottom: 50px;
+    color: hsl(0, 0%, 6%);
+    font-size: 25px;
+}
+
+label.numeroPersonaje:hover {
+    color: hsl(120, 47%, 96%);
+    transition: color 0.5s ease;
+}
+
+input[type="number"]#numeroPersonaje {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4cc45c;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type="button"]#buscarPersonajeBtn {
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+}
+
+input[type="button"]#buscarPersonajeBtn:hover {
+    background-color: #1ed437; 
+}
+
 .mostrar {
     align-items: center;
     background-color: rgb(41, 219, 64, 0.6);
@@ -111,49 +146,13 @@ nav {
     transition: color 0.5s ease;
 }
 
-label.numeroPersonaje {
-    margin-bottom: 50px;
-    color: hsl(0, 0%, 6%);
-    font-size: 16px;
-}
-
-label.numeroPersonaje:hover {
-    color: hsl(120, 80%, 60%);
-    transition: color 0.5s ease;
-}
-
-input[type="number"]#numeroPersonaje {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #4cc45c;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-input[type="button"]#buscarPersonajeBtn {
-    padding: 10px;
-    background-color: grey;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 7px;
-    font-size: 16px;
-    transition: background-color 0.5s ease;
-}
-
-input[type="button"]#buscarPersonajeBtn:hover {
-    background-color: #1ed437; 
-}
-
 footer {
     position: fixed;
     bottom: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7); 
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    opacity: 0.7;
     width: 100%;
 }
 
@@ -167,7 +166,6 @@ footer {
     margin: 0 10px;
     font-weight: bold;
     transition: color 0.3s ease;
-    opacity: 0.9;
 }
 
 .footer-links a:hover {
@@ -219,7 +217,8 @@ footer p:hover {
     }
 
     .mostrar {
-        margin-top: 80px; 
+        margin-top: 80px;
+        margin-bottom: 200px;
     }
 
     .mostrar img {
@@ -241,7 +240,7 @@ footer p:hover {
 
     footer {
         position: relative;
-        margin-top: 100px;
+        margin-top: 277px;
     }
 
     footer a{
